@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Dulce encanto </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo -fondo blanco.png" rel="icon">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link  href="style.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4">
+                    <a href="index.html" class="nav-item nav-link active">inicio</a>
+                    <a href="about.html" class="nav-item nav-link">¿Que ofrecemos  </a>
+                    <a href="#contacto" class="nav-item nav-link">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 250px">
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">"Cada postre cuenta una historia...</h1>
+            <div class="d-inline-flex mb-lg-5">
+                <p class="m-0 text-white">¿Cuál será la tuya?</p>
+                <p class="m-0 text-white px-2">..........🧁🧁🧁</p>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+<div class="section-title">
+    <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Postres 🧁</h2>
+</div>
+
+<!-- Estilos de carrusel -->        
+<style>
+    .carrusel {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+    }
+
+    @media (min-width: 768px) {
+        .carrusel {
+            width: 60%;
+        }
+    }
+
+    .carrusel-contenedor {
+        display: flex;
+        transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .carrusel-item {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .carrusel-item img {
+        width: 100%;
+        height: 90%;
+        display: block;
+        border-radius: 10px;
+    }
+
+    .carrusel-flecha {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    .carrusel-flecha svg {
+        width: 40px;
+        height: 40px;
+        fill: #0A2647;
+        transition: fill 0.3s ease;
+    }
+
+    .carrusel-flecha:hover svg {
+        fill: #144272;
+    }
+
+    .carrusel-flecha-izquierda {
+        left: 20px;
+    }
+
+    .carrusel-flecha-derecha {
+        right: 20px;
+    }
+
+    .carrusel-puntos {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+    }
+
+    .punto {
+        width: 12px;
+        height: 12px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .punto.activo {
+        background-color: rgba(0, 0, 0, 0.8);
+        transform: scale(1.2);
+    }
+</style>
+
+<>
+    <!-- Carrusel 1 -->
+    <div class="carrusel" id="carrusel1">
+        <div class="carrusel-contenedor">
+            <div class="carrusel-item"><img src="img/postres .png" alt="Imagen 1"></div>
+            <div class="carrusel-item"><img src="img/postres  (2).png" alt="Imagen 2"></div>
+        </div>
+        <button class="carrusel-flecha carrusel-flecha-izquierda">&#9664;</button>
+        <button class="carrusel-flecha carrusel-flecha-derecha">&#9654;</button>
+        <div class="carrusel-puntos"></div>
+    </div>
+    <div class="section-title">
+        <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Bocaditos dulces 🫓🥞</h2>
+    </div>
+    <!-- Carrusel 2 -->
+    <div class="carrusel" id="carrusel2">
+        <div class="carrusel-contenedor">
+            <div class="carrusel-item"><img src="img/bocaditos dulces .png" alt="Imagen 1"></div>
+            <div class="carrusel-item"><img src="img/dulces .png" alt="Imagen 2"></div>
+        </div>
+        <button class="carrusel-flecha carrusel-flecha-izquierda">&#9664;</button>
+        <button class="carrusel-flecha carrusel-flecha-derecha">&#9654;</button>
+        <div class="carrusel-puntos"></div>
+    </div>
+    <div class="section-title">
+        <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Bocaditoos salados </h2>
+    </div>
+    <!-- Carrusel 3 -->
+    <div class="carrusel" id="carrusel3">
+        <div class="carrusel-contenedor">
+            <div class="carrusel-item"><img src="img/bocaditos salados .png" alt="Imagen 1"></div>
+            <div class="carrusel-item"><img src="img/bocaditos saldos .png" alt="Imagen 2"></div>
+        </div>
+        <button class="carrusel-flecha carrusel-flecha-izquierda">&#9664;</button>
+        <button class="carrusel-flecha carrusel-flecha-derecha">&#9654;</button>
+        <div class="carrusel-puntos"></div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.carrusel').forEach(carrusel => {
+            const contenedor = carrusel.querySelector(".carrusel-contenedor");
+            const flechaIzquierda = carrusel.querySelector(".carrusel-flecha-izquierda");
+            const flechaDerecha = carrusel.querySelector(".carrusel-flecha-derecha");
+            const puntosContainer = carrusel.querySelector(".carrusel-puntos");
+            const totalImagenes = contenedor.children.length;
+            let indiceActual = 0;
+
+            // Crear puntos de navegación
+            for (let i = 0; i < totalImagenes; i++) {
+                let punto = document.createElement("span");
+                punto.classList.add("punto");
+                if (i === 0) punto.classList.add("activo");
+                puntosContainer.appendChild(punto);
+                punto.addEventListener("click", () => moverCarrusel(i));
+            }
+            const puntos = puntosContainer.querySelectorAll(".punto");
+
+            // Función para mover el carrusel
+            const moverCarrusel = (nuevoIndice) => {
+                if (nuevoIndice < 0) nuevoIndice = totalImagenes - 1;
+                if (nuevoIndice >= totalImagenes) nuevoIndice = 0;
+                contenedor.style.transform = `translateX(-${nuevoIndice * 100}%)`;
+                indiceActual = nuevoIndice;
+                puntos.forEach((punto, index) => punto.classList.toggle("activo", index === indiceActual));
+            };
+            
+            flechaIzquierda.addEventListener("click", () => moverCarrusel(indiceActual - 1));
+            flechaDerecha.addEventListener("click", () => moverCarrusel(indiceActual + 1));
+            setInterval(() => moverCarrusel(indiceActual + 1), 5000);
+        });
+    </script>
+
+
+        
+
+<!-- Contenedor del botón de WhatsApp con mensaje -->
+<div class="whatsapp-container" id="whatsappContainer">
+    <a href="https://wa.me/+51906346395" target="_blank" class="whatsapp-button">
+        <img src="img/logo de whatsaappp.svg" alt="WhatsApp">
+    </a>
+    <div class="whatsapp-message" id="whatsappMessage">
+        <span class="icon">🎂💖</span> ¿Te animas?
+    </div>
+</div>
+
+<!-- Estilos CSS -->
+<style>
+    .whatsapp-container {
+        position: fixed;
+        bottom: 20px; /* Distancia desde la parte inferior */
+        left: 20px; /* Movido a la izquierda */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1000;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    /* Estilos del botón */
+    .whatsapp-button {
+        width: 60px; /* Tamaño del botón */
+        height: 60px;
+        background-color: #25D366; /* Color verde de WhatsApp */
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .whatsapp-button img {
+        width: 35px; /* Tamaño del icono */
+        height: 35px;
+    }
+
+    .whatsapp-button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Estilos del mensaje */
+    .whatsapp-message {
+        background-color: #fff;
+        color: #000;
+        padding: 8px 12px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        position: absolute;
+        bottom: 70px; /* Aparece sobre el botón */
+    }
+
+    .icon {
+        font-size: 18px; /* Tamaño del icono */
+    }
+
+    /* Mostrar el mensaje en PC al pasar el cursor */
+    .whatsapp-container:hover .whatsapp-message {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+
+    /* Mostrar mensaje en móvil al cargar */
+    .whatsapp-message.show {
+        opacity: 1 !important;
+        transform: translateY(-10px) !important;
+    }
+
+    /* Ocultar mensaje en móvil después de 2s */
+    .whatsapp-message.hide {
+        opacity: 0 !important;
+        transform: translateY(10px) !important;
+    }
+
+    /* Ocultar botón cuando se desliza hacia arriba */
+    .hidden {
+        transform: translateY(100px);
+        opacity: 0;
+        pointer-events: none;
+    }
+</style>
+
+<!-- JavaScript -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const mensaje = document.getElementById("whatsappMessage");
+        const whatsappContainer = document.getElementById("whatsappContainer");
+
+        let lastScrollTop = 0;
+
+        // Verifica si el usuario está en un dispositivo móvil
+        if (isMobileDevice()) {
+            mensaje.classList.add("show");
+
+            // Oculta el mensaje después de 2 segundos
+            setTimeout(() => {
+                mensaje.classList.add("hide");
+            }, 2000);
+        }
+
+        // Detectar scroll para mostrar/ocultar el botón de WhatsApp
+        window.addEventListener("scroll", function () {
+            let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // Si desliza hacia arriba, oculta el botón
+                whatsappContainer.classList.add("hidden");
+            } else {
+                // Si desliza hacia abajo, muestra el botón
+                whatsappContainer.classList.remove("hidden");
+            }
+            lastScrollTop = scrollTop;
+        });
+    });
+
+    // Función para detectar si es un dispositivo móvil
+    function isMobileDevice() {
+        return /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+    }
+</script>
+  <!-- Footer Start -->
+  <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top" style="width: 80%;" id="contacto">
+    <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Método de Pagos</h4>
+        
+        <!-- Yape -->
+            <p class="d-flex align-items-center">
+                <img src="img/yape.jpg" alt="Yape" width="25" height="25" class="mr-2">
+                Yape
+            </p>
+        
+            <!-- BCP -->
+            <p class="d-flex align-items-center">
+                <img src="img/bcp.jpg" alt="BCP" width="25" height="25" class="mr-2">
+                BCP
+            </p>
+        
+            <!-- Efectivo -->
+            <p class="d-flex align-items-center">
+                <img src="img/pago en efectivo.png" alt="Efectivo" width="25" height="25" class="mr-2">
+                Efectivo
+            </p>
+            </p>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">¿Antojo de algo dulce? 🍰</h4>
+            <p>📞 ¡Hablemos y endulza tu día con nuestros postres!</p>
+            <div class="d-flex justify-content-start">
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="https://wa.me/+51906346395" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                
+                
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;"></h4>
+            <div>
+                <h6 class="text-white text-uppercase"> </h6>
+                <img src="img/logo -fondo blanco.png"class="logo" style=" height:100%; width: 100%;" >
+                <style>
+                    .logo{
+                        border-radius: 40px;
+                    }
+                </style>
+                <h6 class="text-white text-uppercase"></h6>
+                <p></p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Importante </h4>
+            <p>todo pedido se hace con anticipacion denotando el dia de entrega-lugar-hora</p>
+                <div class="input-group">
+                <p>¿Que esperas?🤔</p>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary font-weight-bold  px-3" ><a  class="boton"href="https://wa.me/+51906346395">Haz tu pedido</a></button>
+                        <style>
+                            .boton{
+                                color: wheat;
+                                text-decoration: none;
+                            }
+                            .boton:hover{
+                                color: whitesmoke;
+                                text-decoration: none;
+                                }
+                        </style>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <p class="mb-2 text-white">Copyright &copy; todos los derechos reservados <a 
+    </div>
+</div>
+<!-- Footer End -->
+
+
+<style>
+    .back-to-top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: #FADADD; /* Color pastel */
+        border-radius: 50%; /* Contorno circular */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .back-to-top i {
+        font-size: 24px;
+        color: #8B0000; /* Color del icono */
+    }
+
+    .back-to-top:hover {
+        background-color: #F5C6D6;
+        transform: scale(1.1);
+    }
+</style>
+<a href="#" class="back-to-top"><i class="fa fa-birthday-cake"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<!-- Contact Javascript File -->
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+
+
+</html>
